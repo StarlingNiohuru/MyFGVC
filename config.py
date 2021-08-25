@@ -1,0 +1,17 @@
+import tensorflow as tf
+
+DATASETS_DIR = "datasets"
+MODEL_PATH = "models/baseline.hdf5"
+SSL_MODEL_PATH = "models/SSL.hdf5"
+BCNN_MODEL_PATH = "models/BCNN.hdf5"
+# HISTORY_FILE_PATH = "histories/MobileNet.json"
+IMG_SIZE = 224
+NEW_SIZE = (IMG_SIZE, IMG_SIZE)
+INPUT_TENSOR_SHAPE = (IMG_SIZE, IMG_SIZE, 3)
+BATCH_SIZE = 16
+BUFFER_SIZE = 1000
+# OUTPUT_CLASSES = 196
+EPOCHS = 20
+DROP_OUT = 0.6
+LEARNING_RATE = 1e-4
+AUTOTUNE = tf.data.AUTOTUNE
